@@ -1,0 +1,15 @@
+{
+  "name": "@openclaw/ralph-loop",
+  "version": "1.0.0",
+  "description": "Self-referential AI agent loop for iterative improvement",
+  "main": "index.ts",
+  "types": "index.ts",
+  "openclaw": {
+    "extensions": ["index.ts"]
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "openclaw": "workspace:*"
+  },
+  "license": "MIT"
+}

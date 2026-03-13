@@ -1,0 +1,47 @@
+{
+  "id": "ralph-loop",
+  "name": "Ralph Wiggum Loop",
+  "description": "Self-referential AI agent loop for iterative improvement - keeps the same prompt and lets the agent see its own work to continuously improve",
+  "version": "1.0.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "stateDir": {
+        "type": "string",
+        "description": "Directory to store loop state files"
+      },
+      "maxIterations": {
+        "type": "number",
+        "description": "Default maximum iterations (0 = unlimited)"
+      },
+      "autoContinue": {
+        "type": "boolean",
+        "description": "Automatically continue loop after agent ends"
+      },
+      "continueDelayMs": {
+        "type": "number",
+        "description": "Delay in ms before auto-continuing"
+      }
+    }
+  },
+  "uiHints": {
+    "stateDir": {
+      "label": "State Directory",
+      "placeholder": "~/.openclaw/ralph-loop",
+      "help": "Directory where loop state files are stored"
+    },
+    "maxIterations": {
+      "label": "Max Iterations",
+      "help": "Default maximum iterations (0 = unlimited)"
+    },
+    "autoContinue": {
+      "label": "Auto Continue",
+      "help": "Automatically trigger next iteration after agent ends"
+    },
+    "continueDelayMs": {
+      "label": "Continue Delay (ms)",
+      "help": "Delay before auto-continuing (default: 1000ms)"
+    }
+  }
+}
