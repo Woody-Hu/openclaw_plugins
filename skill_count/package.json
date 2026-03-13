@@ -1,0 +1,15 @@
+{
+  "name": "@openclaw/skill_count",
+  "version": "1.0.0",
+  "description": "Track and record skill usage statistics via lifecycle hooks",
+  "main": "index.ts",
+  "types": "index.ts",
+  "openclaw": {
+    "extensions": ["index.ts"]
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "openclaw": "workspace:*"
+  },
+  "license": "MIT"
+}

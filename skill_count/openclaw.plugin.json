@@ -1,0 +1,39 @@
+{
+  "id": "skill_count",
+  "name": "Skill Counter",
+  "description": "Track and record skill usage statistics via lifecycle hooks",
+  "version": "1.0.0",
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "outputPath": {
+        "type": "string",
+        "description": "Path to the output JSON file for skill usage statistics"
+      },
+      "trackToolDispatch": {
+        "type": "boolean",
+        "description": "Track skill invocations via tool dispatch (command-dispatch: tool)"
+      },
+      "trackPromptInjection": {
+        "type": "boolean",
+        "description": "Track skill invocations via prompt injection"
+      }
+    }
+  },
+  "uiHints": {
+    "outputPath": {
+      "label": "Output File Path",
+      "placeholder": "~/.openclaw/skill-usage.json",
+      "help": "Path where skill usage statistics will be saved"
+    },
+    "trackToolDispatch": {
+      "label": "Track Tool Dispatch",
+      "help": "Track skills that dispatch to tools"
+    },
+    "trackPromptInjection": {
+      "label": "Track Prompt Injection",
+      "help": "Track skills that inject prompts into agent context"
+    }
+  }
+}
