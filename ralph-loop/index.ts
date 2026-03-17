@@ -97,7 +97,7 @@ function deleteState(sessionKey: string, config: LoopConfig): void {
 function extractPromiseTag(text: string, promiseValue: string): boolean {
   if (!promiseValue || !text) return false;
   const pattern = new RegExp(
-    `\\s*${escapeRegex(promiseValue)}\\s*`,
+    `<promise>\\s*${escapeRegex(promiseValue)}\\s*</promise>`,
     "i"
   );
   return pattern.test(text);
