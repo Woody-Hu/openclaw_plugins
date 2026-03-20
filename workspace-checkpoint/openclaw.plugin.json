@@ -1,0 +1,6 @@
+{
+  "id": "workspace-checkpoint",
+  "name": "Workspace Checkpoint",
+  "description": "Automatically creates workspace checkpoints on gateway start, backing up core files like AGENTS.md, SOUL.md, MEMORY.md, etc.",
+  "version": "1.0.0"
+}

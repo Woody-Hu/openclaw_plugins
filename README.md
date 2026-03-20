@@ -8,6 +8,7 @@ Official open-source plugin repository for OpenClaw, providing various plugins t
 |-------------|---------|-------------|---------------|
 | [skill_count](./skill_count) | 1.0.0 | Track and record skill usage statistics with multiple tracking methods and CLI commands | [README](./skill_count/README.md) |
 | [ralph-loop](./ralph-loop) | 1.0.0 | Self-referential AI agent loop for iterative improvement using the Ralph Wiggum technique | [README](./ralph-loop/README.md) |
+| [workspace-checkpoint](./workspace-checkpoint) | 1.0.0 | Automatically creates workspace checkpoints on gateway start, backing up core files | [README](./workspace-checkpoint/README.md) |
 
 ## Installation
 
@@ -28,7 +29,8 @@ Configure plugins in `openclaw.json`:
       "maxIterations": 0,
       "autoContinue": true,
       "continueDelayMs": 1000
-    }
+    },
+    "workspace-checkpoint": {}
   }
 }
 ```

@@ -1,0 +1,14 @@
+{
+  "name": "@openclaw/workspace-checkpoint",
+  "version": "1.0.0",
+  "description": "OpenClaw workspace checkpoint plugin",
+  "type": "module",
+  "devDependencies": {
+    "openclaw": "workspace:*"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ]
+  }
+}
